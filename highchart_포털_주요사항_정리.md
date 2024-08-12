@@ -37,6 +37,19 @@
 }]
 ```
 
+### 값 최대,최소, 인터벌 설정 : Y-axis
+
+```javascript
+"yAxis": {
+    "title": {
+        "text": "백만톤 Co2eq"
+    },
+    "max": 800,
+    "tickInterval": 200
+}
+```
+
+
 ### 차트에 패턴넣기 : 각 데이터 뒤에 옵션에 넣음
 ```javascript
 "color": {
