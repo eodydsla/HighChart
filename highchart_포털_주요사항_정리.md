@@ -314,21 +314,20 @@ Highcharts.chart(previewBox, {
         13.5,
         14
       ],
-  color: {	
+     color: {	
          patternIndex: 8,
        },
        borderWidth:1,
        dashStyle:'dash',
        borderColor:'orange'
-
     }
   ],
   "yAxis": {
     "title": {
       "text": "°C"
     },
-    "min" : 10,
-      plotLines: [{
+      "min" : 10,
+       plotLines: [{
         color: '#fe6a35',
         width: 2,
         value: 12.8,
@@ -390,8 +389,11 @@ Highcharts.chart(previewBox, {
     "title": {
       "text": "기온(°C)"
     },
+
+    # 최소값 지정
     "min" :10,
 
+    # Plotline 만들기
     plotLines: [{
         color: '#fe6a35',
         width: 2,
