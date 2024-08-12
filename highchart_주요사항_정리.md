@@ -7,6 +7,8 @@
  "plotOptions": {
     "column": {
       "stacking": "normal",
+
+     # 각 항목마다 레이블 표시
       "dataLabels": {
         "enabled": false
       }
