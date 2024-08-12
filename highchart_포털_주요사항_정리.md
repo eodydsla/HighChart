@@ -1,3 +1,55 @@
+## 주요 활용 코드 정리
+
+
+### 스택 레이블 : Y-axis에 들어감
+
+```javascript
+"stackLabels": {
+    "enabled": true,
+    "verticalAlign": "top",
+    "y": -5,
+    "style": {
+        "fontSize": 13,
+        "fontWeight": "normal"
+    }
+}
+```
+
+### 가운데 선넣기 : Y-axis에 들어감
+```javascript
+"plotLines": [{
+    "color": "#fe6a35",
+    "width": 2,
+    "value": 12.8,
+    "zIndex": 5,
+    "dashStyle": "dash",
+    "label": {
+        "text": "평년평균(12.8도)",
+        "align": "left",
+        "y": -15,
+        "x": -2,
+        "style": {
+            "textOutline": "white",
+            "strokeWidth": 2,
+            "fontWeight": "bold"
+        }
+    }
+}]
+```
+
+### 차트에 패턴넣기 : 각 데이터 뒤에 옵션에 넣음
+```javascript
+"color": {
+    "patternIndex": 8
+},
+"borderWidth": 1,
+"dashStyle": "dash",
+"borderColor": "orange"
+```
+
+
+
+	    
 ## 예시1 : 질소산화물 배출량(Nox) 자료 그래프 (누적 Bar차트)
 
 ### 전체 코드 참고
