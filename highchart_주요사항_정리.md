@@ -35,8 +35,9 @@
   }
 ```
 
-5) 목표치 차트모양 변경 (해당 y축 부분에 추가)
+4) 목표치 차트모양 변경 (해당 y축 부분에 추가)
 
+```javascript
  "name": "목표치",
       "data": [
         "",
@@ -54,7 +55,7 @@
        borderWidth:1,
        dashStyle:'dash',
        borderColor:'orange'
-
+```
 
 
  "yAxis": {
