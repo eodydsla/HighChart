@@ -143,7 +143,7 @@ Highcharts.chart(previewBox, {
         658163,
         539438
       ],
-     color: {        
+     "color": {        
          patternIndex: 8,
        },
        borderWidth:1,
