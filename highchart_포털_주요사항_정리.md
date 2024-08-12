@@ -314,7 +314,7 @@ Highcharts.chart(previewBox, {
         13.5,
         14
       ],
-             color: {	
+  color: {	
          patternIndex: 8,
        },
        borderWidth:1,
