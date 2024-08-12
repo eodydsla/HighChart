@@ -267,6 +267,122 @@ Highcharts.chart(previewBox, {
 
 
 ### 전체 코드
+```javascript
+Highcharts.chart(previewBox, {
+  "title": {
+    "text": "연평균기온"
+  },
+  "series": [
+    {
+      "name": "평균기온",
+      "data": [
+        12.4,
+        12.1,
+        12.1,
+        12.6,
+        12.8,
+        13.1,
+        13.4,
+        12.8,
+        12.8,
+        13.3,
+        13,
+        13.3,
+        12.9,
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "name": "전망치",
+      "data": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        13,
+        13.5,
+        14
+      ],
+             color: {	
+         patternIndex: 8,
+       },
+       borderWidth:1,
+       dashStyle:'dash',
+       borderColor:'orange'
+
+    }
+  ],
+  "yAxis": {
+    "title": {
+      "text": "°C"
+    },
+    "min" : 10,
+      plotLines: [{
+        color: '#fe6a35',
+        width: 2,
+        value: 12.8,
+        zIndex: 5,
+        dashStyle : 'dash',
+        label: {
+            text: '평년평균(12.8°C)',
+            align: 'left',
+            y: -15,     
+            style: {		
+	          textOutline: 'white',
+	          strokeWidth: 2,
+	          fontWeight : 'bold'
+            }
+        }}]
+  },
+  "chart": {
+    "type": "column"
+  },
+  "xAxis": {
+    "categories": [
+      "2010",
+      "2011",
+      "2012",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2030(전망)",
+      "2040(전망)",
+      "2050(전망)"
+    ]
+  },
+  "legend": {
+    "layout": "horizontal",
+    "align": "center",
+    "verticalAlign": "bottom"
+  },
+  "plotOptions": {
+    "column": {
+      "stacking": "normal",
+      "dataLabels": {
+        "enabled": true
+      }
+    }
+  }
+});
+```
 
 ### 주요수정사항
 ```javascript
