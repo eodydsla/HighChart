@@ -143,32 +143,36 @@ Highcharts.chart(previewBox, {
         658163,
         539438
       ],
-             color: {        
+     color: {        
          patternIndex: 8,
        },
        borderWidth:1,
        dashStyle:'dash',
        borderColor:'orange'
-
     }
   ],
+
+
   "yAxis": {
     "title": {
       "text": "톤(ton)"
     },
-            "stackLabels": {
-                "enabled": true,
-                "verticalAlign": "top",
-                "y":-5,
-                style: {	
-	                fontSize: 13,
-	                fontWeight : 'normal'
-                }
-      },
+    "stackLabels": {
+	"enabled": true,
+	"verticalAlign": "top",
+	"y":-5,
+	style: {	
+		fontSize: 13,
+		fontWeight : 'normal'
+	}
+    },
   },
+
+  # Bar차트 선택
   "chart": {
     "type": "column"
   },
+
   "xAxis": {
     "categories": [
       "2015",
@@ -186,6 +190,8 @@ Highcharts.chart(previewBox, {
     "align": "center",
     "verticalAlign": "bottom"
   },
+
+  # 차트 속성
   "plotOptions": {
     "column": {
       "stacking": "normal",
