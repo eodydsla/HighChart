@@ -79,8 +79,38 @@
     }
 ]
 
+### 라인차트 변경
+```javascript
+"label": {
+    "style": {
+        "textOutline": "white",
+        "strokeWidth": 2,
+        "fontWeight": "bold"
+    },
+    "align": "left"
+},
+"type": "line",
+"marker": {
+    "fillColor": "white",
+    "lineColor": "red",
+    "lineWidth": 2
+},
+"zIndex": 4,
+"dataLabels": {
+    "enabled": true,
+    "y": 30
+}
 ```
 
+### 네거티브 스택합
+```javascript 
+formatter: function() {
+    var negativeStack = this.axis.stacking.stacks['-column'];
+    return this.isNegative ? '' : this.total + (negativeStack && negativeStack[this.x] ? negativeStack[this.x].total : 0);
+    },
+```
+
+# 추가사항
 	    
 ## 예시1 : 질소산화물 배출량(Nox) 자료 그래프 (누적 Bar차트)
 
