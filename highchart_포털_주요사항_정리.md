@@ -4,37 +4,43 @@
 ### 스택 레이블 : Y-axis에 들어감
 
 ```javascript
-"stackLabels": {
-    "enabled": true,
-    "verticalAlign": "top",
-    "y": -5,
-    "style": {
-        "fontSize": 13,
-        "fontWeight": "normal"
+"yAxis": {
+    "stackLabels": {
+        "enabled": true,
+        "verticalAlign": "top",
+        "y": -5,
+        "style": {
+            "fontSize": 13,
+            "fontWeight": "normal"
+        }
     }
 }
+
 ```
 
 ### 가운데 선넣기 : Y-axis에 들어감
 ```javascript
-"plotLines": [{
-    "color": "#fe6a35",
-    "width": 2,
-    "value": 12.8,
-    "zIndex": 5,
-    "dashStyle": "dash",
-    "label": {
-        "text": "평년평균(12.8도)",
-        "align": "left",
-        "y": -15,
-        "x": -2,
-        "style": {
-            "textOutline": "white",
-            "strokeWidth": 2,
-            "fontWeight": "bold"
+"yAxis": {
+    "plotLines": [{
+        "color": "#fe6a35",
+        "width": 2,
+        "value": 12.8,
+        "zIndex": 5,
+        "dashStyle": "dash",
+        "label": {
+            "text": "평년평균(12.8도)",
+            "align": "left",
+            "y": -15,
+            "x": -2,
+            "style": {
+                "textOutline": "white",
+                "strokeWidth": 2,
+                "fontWeight": "bold"
+            }
         }
-    }
-}]
+    }]
+}
+
 ```
 
 ### 값 최대,최소, 인터벌 설정 : Y-axis에 들어감
@@ -59,8 +65,6 @@
 "dashStyle": "dash",
 "borderColor": "orange"
 ```
-
-
 
 	    
 ## 예시1 : 질소산화물 배출량(Nox) 자료 그래프 (누적 Bar차트)
