@@ -78,8 +78,10 @@
         "borderColor": "orange"
     }
 ]
+```
 
 ### 라인차트 변경
+
 ```javascript
 "label": {
     "style": {
