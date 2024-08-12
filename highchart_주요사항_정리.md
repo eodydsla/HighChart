@@ -16,7 +16,7 @@
 ```
 
 3)  합계 레이블 표시
-```
+```javascript
   "yAxis": {
     "title": {
       "text": "톤(ton)"
@@ -31,6 +31,8 @@
                 fontWeight : 'normal'
                  },
             }
+    ...
+  }
 ```
 
 5) 목표치 차트모양 변경 (해당 y축 부분에 추가)
