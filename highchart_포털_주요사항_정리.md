@@ -56,14 +56,29 @@
 ```
 
 
-### 차트에 패턴넣기 : 각 데이터 뒤에 옵션에 넣음
+### 차트에 패턴넣기 : 각 시리즈, 해당 데이터 별 속성
 ```javascript
-"color": {
-    "patternIndex": 8
-},
-"borderWidth": 1,
-"dashStyle": "dash",
-"borderColor": "orange"
+"series": [
+    {
+        "name": "평균기온",
+        "data": [
+            12.4, 12.1, 12.1, 12.6, 12.8, 13.1, 13.4, 12.8, 12.8, 13.3, 13, 13.3, 12.9, "", "", ""
+        ]
+    },
+    {
+        "name": "전망치",
+        "data": [
+            "", "", "", "", "", "", "", "", "", "", "", "", "", 13, 13.5, 14
+        ],
+        "color": {
+            "patternIndex": 8
+        },
+        "borderWidth": 1,
+        "dashStyle": "dash",
+        "borderColor": "orange"
+    }
+]
+
 ```
 
 	    
