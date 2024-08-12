@@ -3,12 +3,11 @@
 1) 누적 Bar차트 선택
 2) 데이터 레이블 제거
    
-```
+```javascript
  "plotOptions": {
     "column": {
       "stacking": "normal",
 
-     # 각 항목마다 레이블 표시
       "dataLabels": {
         "enabled": false
       }
