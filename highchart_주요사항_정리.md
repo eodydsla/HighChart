@@ -203,6 +203,7 @@ Highcharts.chart(previewBox, {
 });
 ```
 
+### 주요수정사항
 1) 누적 Bar차트 선택
 2) 데이터 레이블 제거
    
@@ -262,7 +263,13 @@ Highcharts.chart(previewBox, {
 ...
 ```
 
+## 예시2 : 기온 자료 그래프 (Bar차트)
 
+
+### 전체 코드
+
+### 주요수정사항
+```javascript
  "yAxis": {
     "title": {
       "text": "기온(°C)"
@@ -287,4 +294,5 @@ Highcharts.chart(previewBox, {
             }
         }}]
   },
+```
 
